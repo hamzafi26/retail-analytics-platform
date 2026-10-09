@@ -1,0 +1,20 @@
+files: 
+    - olist_customers_dataset.csv
+columns:
+    customer_id:
+        type: string
+        nullable: false
+    
+    customer_unique_id:
+        type: string
+        nullable: false
+
+    customer_zip_code_prefix:
+        type: string
+        nullable: false
+    customer_city:
+        type: string
+        nullable: false
+    customer_state:
+        type: string
+        nullable: false

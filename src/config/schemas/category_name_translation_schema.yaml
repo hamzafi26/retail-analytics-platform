@@ -1,0 +1,10 @@
+files:
+    - product_category_name_translation.csv
+columns:
+    product_category_name:
+        type: string
+        nullable: false
+    product_category_name_english:
+        type: string
+        nullable: false
+

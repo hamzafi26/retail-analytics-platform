@@ -1,0 +1,20 @@
+files: 
+    - olist_geolocation_dataset_part1.csv
+    - olist_geolocation_dataset_part2.csv
+columns:
+
+    geolocation_zip_code_prefix:
+        type: string
+        nullable: false
+    geolocation_lat:
+        type: float
+        nullable: false
+    geolocation_lng:
+        type: float
+        nullable: false
+    geolocation_city:
+        type: string
+        nullable: false
+    geolocation_state:
+        type: string
+        nullable: false

@@ -1,18 +1,15 @@
 from pathlib import Path
 
 DATA_PATH = Path(__file__).parent.parent.parent / "data"
-
-EXPECTED_DATA_FILES = {
-    "customer": "olist_customers_dataset.csv",
-    "geolocation": [
-        "olist_geolocation_dataset_part1.csv",
-        "olist_geolocation_dataset_part2.csv",
-    ],
-    "order_items": "olist_order_items_dataset.csv",
-    "order_payments": "olist_order_payments_dataset.csv",
-    "order_reviews": "olist_order_reviews_dataset.csv",
-    "orders": "olist_orders_dataset.csv",
-    "products": "olist_products_dataset.csv",
-    "sellers": "olist_sellers_dataset.csv",
-    "category_name_translation": "product_category_name_translation.csv",
+SCHEMA_PATH = Path(__file__).parent / "schemas"
+SCHEMA_FILES = {
+    "customer": "customers_schema.yaml",
+    "geolocation": "geolocation_schema.yaml",
+    "order_items": "order_items_schema.yaml",
+    "order_payments": "order_payments_schema.yaml",
+    "order_reviews": "order_reviews_schema.yaml",
+    "orders": "orders_schema.yaml",
+    "products": "product_schema.yaml",
+    "sellers": "sellers_schema.yaml",
+    "category_name_translation": "category_name_translation_schema.yaml",
 }

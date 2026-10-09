@@ -1,0 +1,25 @@
+files:
+    - olist_order_reviews_dataset.csv
+
+columns:
+    review_id:
+        type: string
+        nullable: false
+    order_id:
+        type: string
+        nullable: false
+    review_score:
+        type: integer
+        nullable: false
+    review_comment_title:
+        type: string
+        nullable: true
+    review_comment_message:
+        type: string
+        nullable: true
+    review_creation_date:
+        type: datatime
+        nullable: false
+    review_answer_timestamp:
+        type: datetime
+        nullable: false

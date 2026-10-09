@@ -1,0 +1,16 @@
+files:
+    - olist_sellers_dataset.csv
+columns:
+    seller_id:
+        type: string
+        nullable: false
+    seller_zip_code_prefix:
+        type: string
+        nullable: false
+    seller_city:
+        type: string
+        nullable: false
+    seller_state:
+        type: string
+        nullable: false
+    

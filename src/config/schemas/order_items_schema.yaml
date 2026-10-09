@@ -1,0 +1,26 @@
+files: 
+    - olist_order_items_dataset.csv
+
+columns:
+    order_id:
+        type: string
+        nullable: false
+    order_item_id:
+        type: integer
+        nullable: false
+    product_id:
+        type: string
+        nullable: false
+    seller_id:
+        type: string
+        nullable: false
+    shipping_limit_date:
+        type: datetime
+        nullable: false
+    price:
+        type: float
+        nullable: false
+    freight_value:
+        type: float
+        nullable: false
+    
