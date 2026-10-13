@@ -18,7 +18,7 @@ columns:
         type: string
         nullable: true
     review_creation_date:
-        type: datatime
+        type: datetime
         nullable: false
     review_answer_timestamp:
         type: datetime

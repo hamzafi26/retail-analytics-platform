@@ -1,5 +1,5 @@
 from pathlib import Path
-
+import pandas
 DATA_PATH = Path(__file__).parent.parent.parent / "data"
 SCHEMA_PATH = Path(__file__).parent / "schemas"
 SCHEMA_FILES = {
@@ -12,4 +12,12 @@ SCHEMA_FILES = {
     "products": "product_schema.yaml",
     "sellers": "sellers_schema.yaml",
     "category_name_translation": "category_name_translation_schema.yaml",
+}
+
+
+CONVERTERS = {
+    "integer": lambda series: series.astype("Int64"),
+    "string": lambda series: series.astype("string"),
+    "datetime": pandas.to_datetime,
+    "float": lambda series: series.astype("float64"),
 }
