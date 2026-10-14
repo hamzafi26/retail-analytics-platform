@@ -21,3 +21,6 @@ CONVERTERS = {
     "datetime": pandas.to_datetime,
     "float": lambda series: series.astype("float64"),
 }
+
+GCP_PROJECT_ID = "retail-analytics-platform-dev"
+GCS_BUCKET = "retail-analytics-dev-data-1026462845890"
